@@ -108,6 +108,18 @@ In the code above we have made some choices:
 
 A few examples of what **not** to do.
 
+In this code you might also have noticed that the function defintion line looks a little different:
+
+`def main() -> None:`
+
+The `-> None:` is what is termed a **type definition** for the function. In this case, the function returns `None`,
+in other cases the function returns a `np.array` (for example).
+
+Function type definitions were introduced in Python 3.5 and are 'neat' but entirely optional.
+
+More [here](https://www.python.org/dev/peps/pep-0484/) 
+
+
 ### Mixing reading files and creating objects
 
 Objects that do need files to be created are easy to create and re-create,
