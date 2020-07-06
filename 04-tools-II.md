@@ -30,7 +30,7 @@ prompted to install the Python extension then be sure to do so.
           return       y **2
       def g(self, x :int,
           y : int=42
-          ) -int:
+          ) -> int:
           return x--y
    def f  (   a ) :
       return      37+-a[42-a :  y*3]
@@ -60,7 +60,7 @@ selector in the bottom panel of VS Code
      def f(self):
          return y ** 2
 
-     def g(self, x: int, y: int = 42) -int:
+     def g(self, x: int, y: int = 42) -> int:
          return x - -y
  ```
 
