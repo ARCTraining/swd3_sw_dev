@@ -5,18 +5,19 @@
 Linters enforce [style rules](https://lintlyci.github.io/Flake8Rules/) on your
 code such as:
 
-- disallow one letter variables outside of loops
+- don't use one letter variables outside of loops
 - use `lower_snake_case` for variables
-- use `CamelCase` for classes
+- use `CamelCase` for classes on Object Oriented code
 - disallow nesting more than n deep
-- detect code-smells (patterns that are often bugs, e.g. two functions with the
+- detect **code-smells** (patterns that are often bugs, e.g. two functions with the
   same name)
 - static type detection ([mypy](http://mypy-lang.org/)) where we tell the editor
   what kind of objects (`dict`, `list`, `int`, etc) a function expects
 
-Consistent styles make a code more consistent an easier to read, whether or not
-you agree with the style. Using an automated linter avoids bike-shedding since
-the linter is the final arbiter.
+Consistent styles make a code more consistent and easier to read, whether or not
+you agree with that style. 
+
+Using an automated linter avoids [bike-shedding](https://no-kill-switch.ghost.io/bike-shedding-how-mature-are-you-as-an-engineer/) (which if you haven't heard before means concentrating on unimportant detail rather than the real issue) since the linter is the final arbiter.
 
 ## Why does linting matter?
 
@@ -32,7 +33,7 @@ the linter is the final arbiter.
 
 We chose:
 
-- [flake8](https://pypi.org/project/black/) because it is simple
+- [flake8](https://flake8.pycqa.org/en/latest/) because it is simple
 - [pylint](https://www.pylint.org/) because it is (too?) extensive
 - [mypy](http://mypy-lang.org/) because it helps keep track of object types
 
@@ -40,9 +41,7 @@ We chose:
 
 Setup VS Code:
 
-1. Open Settings (see [previous
-    exercise](../l1-03-tools-II#rules-to-choose-a-code-formatter) if you're
-    not sure how):
+1. Open Settings:
   - Search for "linting enable" and check the box for "Python Linting:
   Enabled".
   - Search for "pylint enabled" and check the box for "Python Linting:
