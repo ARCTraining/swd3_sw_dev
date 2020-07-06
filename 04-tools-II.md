@@ -2,7 +2,7 @@
 
 ## Why does formatting matter?
 
-* Code is read more often than written
+* Code is read more often than it is written
 * Setting up a formatter in your editor takes 5 minutes
 * Those 5 minutes are redeemed across the lifetime of the project
 
@@ -12,7 +12,7 @@
 1. Stick with it
 
 We suggest [black](https://pypi.org/project/black/) because it has very few
-options with which to fiddle.
+options with which to confuse you.
 
 ## Formatting example
 
@@ -64,7 +64,7 @@ selector in the bottom panel of VS Code
          return x - -y
  ```
 
- Ah! much better!
+See? Much improved formatting.
 
- Still, the sharp-eyed user will notice at least one issue with this code.
- *Formatting code does not make it less buggy!*
+Still, the sharp-eyed user might notice at least one issue with this code.
+*Formatting code does not make it less buggy!*
