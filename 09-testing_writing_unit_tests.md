@@ -204,7 +204,7 @@ def recursive_fibonacci(n):
  
  1. If you haven't already, see the  instructions on
     how to install Visual Studio Code and conda.
- 1. Download and extract [this zip file](https://github.com/ImperialCollegeLondon/diffusion/archive/master.zip).
+ 1. Download and extract [this zip file](https://github.com/ARCTraining/swd3_sw_dev/blob/master/files/diffusion-master.zip).
 
  1. In Visual Studio Code go to **File  Open Folder...** and find the files
     you just extracted.
