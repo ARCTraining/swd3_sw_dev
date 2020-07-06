@@ -121,7 +121,8 @@ git version 2.25.0
 
 If Git is not already available on your machine you can try to install it via
 your distributions package manager. For Debian/Ubuntu run `sudo apt-get install
-git` and for Fedora run `sudo dnf install git`.
+git` and for Fedora/RHEL/CentOS run `sudo dnf install git` or `sudo yum install git` 
+(if the `dnf` command isn't available).
 
 To check the installation was successful open a new terminal. In the window that
 launches enter the command `git --version` and press enter. You should see
