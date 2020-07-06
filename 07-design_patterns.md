@@ -5,6 +5,7 @@
 ```yaml
 software design patterns: typical solutions to common problems
 ```
+Sometimes when you look at someone's code you think *What on earth are they trying to do there?*. Following a set of **design patterns** mean that you solve the same type of problem in the same (efficient) way each time.
 
 ### Pros
 
@@ -16,7 +17,7 @@ software design patterns: typical solutions to common problems
 ### Cons
 
 1. Shoehorning: not all patterns fit everywhere
-1. Patterns paper-over inadequacies that exist in one language but not another
+1. Patterns can paper-over inadequacies that exist in one language but not another
    - the [visitor](https://en.wikipedia.org/wiki/Visitor_pattern) pattern is
      popular in Java or C++, but useless in [Julia](https://www.julia.org),
      thanks to [multiple
@@ -25,6 +26,7 @@ software design patterns: typical solutions to common problems
      [functional](https://en.wikipedia.org/wiki/Functional_programming) style
      makes the [strategy](https://en.wikipedia.org/wiki/Strategy_pattern)
      pattern so obvious, it's not longer a pattern, it's the way things are done
+1. So, not all patterns are appropriate for every language.     
 
 ### Examples:
 
