@@ -4,17 +4,19 @@
 
 There are a number of compelling reasons to properly test a research code:
 
-* Show that physical laws or mathematical relationships are correctly encoded
+* Show that physical laws or mathematical relationships are correctly coded
 * Check that code works when running on a new system
 * Make sure new code changes do not break existing functionality
-* Ensure code correctly handles edge or corner cases
+* Ensure code correctly handles **edge** or **corner** cases
 * Persuade others your code is reliable
 * Check that code works with new or updated dependencies
 
 Whilst testing might seem like an intimidating topic the chances are you're
 already doing testing in some form. No matter the level of experience, no
 programmer ever just sits down and writes some code, is perfectly confident that
-sit works and proceeds to use it straight away in research. Instead development
+sit works and proceeds to use it straight away in research. 
+
+Instead development
 is in practice more piecemeal - you generally think about a simple input and the
 expected output then write some simple code that works. Then, iteratively, you
 think about more complicated example inputs and outputs and flesh out the code
@@ -105,7 +107,7 @@ cases that your function needs to handle especially?
 
 A useful quantitative metric to consider is **test coverage**. Using additional
 tools it is possible to determine, on a line-by-line basis, the proportion of a
-codebase that is being exercised by its tests. This can be useful to ensure, for
+codebase (your total program) that is being *exercised* by its tests. This can be useful to ensure, for
 instance, that all logical branching points within the code are being used by
 the test inputs.
 
