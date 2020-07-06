@@ -55,14 +55,14 @@ unexpected:
 
 With integers, `+` is an *addition*, for strings it's a *concatenation*.
 
-## Health impact of choosing the wrong data structure
+## Impact of choosing the wrong data structure
 
-- we could use `"1", "2", "3"` to represent numbers, rather than `1`, `2`, `3`
+- we could use `"1", "2", "3"` (ie. strings) to represent integers, rather than `1`, `2`, `3`
 - we would have to reinvent how to add numbers, and multiply, and divide them
 - the wrong data structures can make your code vastly more complicated
 - also, the code would be quite slow
 
-Stay healthy. Stop and choose the right data structure for you!
+Stay sensible. Stop and choose the right data structure for you!
 
 
 # Basic data structures
@@ -323,7 +323,7 @@ All **modern** languages will have equivalents, outside of "Modern Fortran".
 Don't reinvent the square wheel.
 
 
-## Digital Oxford Dictionary, the wrong way and the right way
+## Exercise: Digital Oxford Dictionary, the wrong way and the right way
 1. Implement an oxford dictionary with two `list`s, one for words, one for
 definitions:
 
@@ -349,7 +349,7 @@ definitions:
    use?
 1. What about when there are multiple meanings for a verb or a noun?
 
-## Dictionary implemented with lists
+## Solution 1: Dictionary implemented with lists
 
 ```python
 from typing import List, Text, Tuple
@@ -413,7 +413,7 @@ if __name__ == "__main__":
 ```
 
 
-## Dictionary implemented with a dictionary
+## Solution 2: Dictionary implemented with a dictionary
 
 ```python
 from typing import List, Text, Tuple, Mapping
