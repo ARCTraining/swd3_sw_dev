@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Unit testing validates, in isolation, functionally independent components of a
+Unit testing validates, in isolation, the functionally independent components of a
 program.
 
-In this lesson we'll demonstrate how to write and execute unit tests for a
-simple scientific code.
+In this section we'll demonstrate how to write and execute unit tests for a
+simple scientific code. See [Better Scientific Software](https://bssw.io) for more detail.
 
-This involves making some technical decisions...
+This involves making some technical decisions.
 
 ### Test frameworks
 
@@ -47,7 +47,7 @@ Why use a test framework?
 
 - Avoid reinventing the wheel - frameworks such as pytest provide lots of
   convenient features (some of which we'll see shortly)
-- Standardisation leads to better tooling, easier onboarding etc
+- Standardisation leads to better practice in your group and makes it much easier to *onboard* new colleagues.
 
 Projects that use pytest:
 
@@ -62,7 +62,7 @@ Projects that use pytest:
  
  Reading the test suites of mature projects is a good way to learn about
  testing methodologies and frameworks
-{: .callout}
+
 
 ### Code editors
 
@@ -93,7 +93,7 @@ def test_non_numeric_input():
         recursive_fibonacci("foo")
 ```
 
-### Parametrisation
+### Parameterisation
 
 Similar test invocations can be grouped together to avoid repetition. Note how
 the parameters are named, and "injected" by pytest into the test function at
@@ -200,7 +200,7 @@ def recursive_fibonacci(n):
 
  ## Getting started
  
- ### Setting up our editor
+ ### Setting up the editor
  
  1. If you haven't already, see the  instructions on
     how to install Visual Studio Code and conda.
@@ -324,7 +324,7 @@ failing - indicating that there is a bug in the code.
  
   ## Solution 1
   
-  Your test should look something like this:
+  Your test might look something like this:
   
   ```python
   # test_diffusion.py
@@ -389,7 +389,7 @@ failing - indicating that there is a bug in the code.
  
  ### Adding parameterisation
  
- Parametrise `test_heat()` to ensure the approximation is valid for some other
+ Parameterise `test_heat()` to ensure the approximation is valid for some other
  combinations of `L` and `tmax` (ensuring that the stability condition remains
  true).
  
@@ -411,11 +411,11 @@ failing - indicating that there is a bug in the code.
  After completing these two steps check the coverage of your tests via the Test
  Output panel - it should be 100%.
  
- The full, final versions of [diffusion.py](https://github.com/ImperialCollegeLondon/diffusion/blob/develop/diffusion.py)
- and [test_diffusion.py](https://github.com/ImperialCollegeLondon/diffusion/blob/develop/test_diffusion.py)
+ The full, final versions of [diffusion.py](https://github.com/arctraining/files/diffusion.py)
+ and [test_diffusion.py](https://github.com/arctraining/files/test_diffusion.py)
  are available on GitHub.
  
- ### Bonus task(s)
+ ### Extra task(s)
  
  - Write a doctest-compatible docstring for `step()` or `heat()`
  - Write at least one test for our currently untested `linspace()` function
@@ -445,9 +445,7 @@ def test_fibonacci(benchmark):
  
  Demonstration of performance regression via recursive and formulaic approaches
  to Fibonacci calculation
- ([output](https://imperiallondon.sharepoint.com/sites/RSE/Shared%20Documents/Graduate%20School%20RSE%20course/Supplementary%20teaching%20material/Essential%20Software%20Engineering%20for%20Researchers/2020-02%20pytest-benchmark%20output.png))
-{: .callout}
-
+ 
 - [`pytest-notebook`][pytest-notebook] can check for regressions in your Jupyter
   notebooks (see also [Jupyter CI][jupyter-ci])
 
