@@ -356,7 +356,7 @@ from typing import List, Text, Tuple
 
 def modify_definition(
     word: Text, newdef: Text, words: List[Text], definitions: List[Text]
-) -List[Text]:
+    ) -List[Text]:
     from copy import copy
 
     index = words.index(word)
@@ -366,7 +366,7 @@ def modify_definition(
 
 def find_rhymes(
     rhyme: Text, words: List[Text], definitions: List[Text]
-) -Tuple[List[Text], List[Text]]:
+    ) -Tuple[List[Text], List[Text]]:
     result_words = []
     result_definitions = []
     for word, definition in zip(words, definitions):
