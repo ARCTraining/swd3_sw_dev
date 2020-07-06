@@ -66,7 +66,7 @@ Similarly, code should be written with a structure separating separable
 concerns:
 
 ```python
-def main() -None:
+def main() -> None:
   # reading input files is one thing
   config = read_input(filename)
 
@@ -80,12 +80,12 @@ def main() -None:
   save(result_I, config['section_I save path'])
 
 
-def read_input(filename: Text) -Dict:
+def read_input(filename: Text) -> Dict:
   """ Reads input data from file. """
   pass
 
 
-def save(data: tf.Tensor, filename: Text = "saveme.h5") -None:
+def save(data: tf.Tensor, filename: Text = "saveme.h5") -> None:
   """ Saves output data to file. """
   pass
 
@@ -133,7 +133,7 @@ It creates file artifacts. Littering is a crime and hidden files are litter.
 
 ```python
 class SectionI
-    def run(self, b: tf.Tensor, filename: Text = "somefile.aaa") -tf.Tensor:
+    def run(self, b: tf.Tensor, filename: Text = "somefile.aaa") -> tf.Tensor:
         # BAD!! hidden dependency on the content of the file
         aaa = read_aaa(filename)
         ...
@@ -179,22 +179,22 @@ A code is a sequence of transformations on data, e.g.:
 The code should reflect that structure:
 
 ```python
-def read_experiment(filename: Text) -Dict:
+def read_experiment(filename: Text) -> Dict:
     ...
     return measurements
 
 
-def compute_a(measurements) -np.ndarray:
+def compute_a(measurements) -> np.ndarray:
     ...
     return a
 
 
-def compute_b(measurements) -np.ndarray:
+def compute_b(measurements) -> np.ndarray:
     ...
     return b
 
 
-def compute_result(a, b) -np.ndarray:
+def compute_result(a, b) -> np.ndarray:
     ...
     return result
 ```
@@ -226,11 +226,11 @@ def compute_result(a, b, experiment) -np.ndarray:
 It's often a **bad** idea for functions to modify their arguments.
 
 ```python
-def compute_a(measurements) -np.ndarray:
+def compute_a(measurements) -> np.ndarray:
     measurements[1] *= 2
     ...
 
-def compute_b(measurements) -np.ndarray:
+def compute_b(measurements) -> np.ndarray:
     measurements[1] *= 0.5
     ...
 ```
