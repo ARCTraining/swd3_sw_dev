@@ -296,7 +296,7 @@ failing - indicating that there is a bug in the code.
     _Hint: the loop in `heat()` should now look like this:_
  
     ```python
-    for _ in range(nt - 1):
+    for t in range(nt - 1):
         u = step(u, dx, dt, alpha)
     ```
  
@@ -322,7 +322,7 @@ failing - indicating that there is a bug in the code.
     function to match the equation - correcting the original bug. Once you've
     done this all the tests should pass.
  
-  ## Solution 1
+  #### Solution 1
   
   Your test might look something like this:
   
@@ -367,7 +367,7 @@ failing - indicating that there is a bug in the code.
  raised. Check that this test fails before making it pass by modifying
  `diffusion.py` to raise an `Exception` appropriately.
  
-  ## Solution 2
+  #### Solution 2
   
   ```python
   # test_diffusion.py
@@ -393,7 +393,7 @@ failing - indicating that there is a bug in the code.
  combinations of `L` and `tmax` (ensuring that the stability condition remains
  true).
  
-  ## Solution 3
+  #### Solution 3
   
   ```python
   # test_diffusion.py
@@ -411,8 +411,8 @@ failing - indicating that there is a bug in the code.
  After completing these two steps check the coverage of your tests via the Test
  Output panel - it should be 100%.
  
- The full, final versions of [diffusion.py](https://github.com/arctraining/files/diffusion.py)
- and [test_diffusion.py](https://github.com/arctraining/files/test_diffusion.py)
+ The full, final versions of [diffusion.py](https://github.com/arctraining/files/swd3_sw_dev/blob/master/files/diffusion.py)
+and [test_diffusion.py](https://github.com/arctraining/files/swd3_sw_dev/blob/master/files/test_diffusion.py)
  are available on GitHub.
  
  ### Extra task(s)
